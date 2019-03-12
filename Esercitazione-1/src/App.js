@@ -7,16 +7,17 @@
  * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+} from 'react-native';
 import NativeBridge from './components/NativeBridge';
-
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-     <NativeBridge {...this.props} />
+      <NativeBridge {...this.props} />
     );
   }
 }
