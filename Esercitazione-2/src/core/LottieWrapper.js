@@ -47,8 +47,8 @@ export default class LottieWrapper extends React.Component<Props, State> {
              this.animation = animation;
            }}
            style={{
-             width: width || 280,
-             height: height || 280,
+             width: width || 380,
+             height: height || 380,
            }}
            loop={loop || true}
            source={anim}
