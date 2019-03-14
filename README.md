@@ -34,12 +34,46 @@
 
 ### Librerie Link
 * [Redux](https://redux.js.org/introduction/examples)
+* [Expo](https://docs.expo.io/versions/v32.0.0/introduction/installation/)
+* [React Navigation](https://reactnavigation.org)
+* [React Native Navigation](https://github.com/wix/react-native-navigation)
+* [App Expo React Navigation](https://expo.io/@react-navigation/NavigationPlayground)
 
-### Esempio di utilizzo degli script 
-* "android": "react-native run-android",
-* "ios": "react-native run-ios",
-* "xcode": "open ios/CleanOutDoor.xcworkspace/",
-* "run:ios": ". ./script/ios/build.sh",
-* "rename": "node ./script/rename.js",
-* "start": "node ./script/start.js",
-* "clean": "node ./script/clean.js",
+
+
+### Alias da insere nella sezione script del package.json
+* "start": "node ./script/start.js"  -> da terminale ```yarn start oppure npm start```
+* "android": "react-native run-android"  -> da terminale ```yarn android oppure npm run android```
+* "ios": "react-native run-ios"  -> da terminale ```yarn ios oppure npm run ios```
+* "emu:android": "node ./script/emulator.js"  -> da terminale ```yarn emu:android oppure npm run emu:android```
+* "xcode": "open ios/[nome progetto].xcworkspace/"  -> da terminale ```yarn android oppure npm run android```
+* "build:ios": ". ./script/ios/build.sh"  -> da terminale ```yarn build:android oppure npm run build:android```
+* "build:android": ". ./script/ios/build.sh"  -> da terminale ```yarn build:ios oppure npm run build:ios```
+* "clean": "node ./script/clean.js"  -> da terminale ```yarn clean oppure npm run clean```
+
+
+ > Usage: react-native [options] [command]
+
+  Options:
+
+    -V, --version                      output the version number
+    -h, --help                         output usage information
+
+  Commands:
+
+    start [options]                    starts the webserver
+    run-ios [options]                  builds your app and starts it on iOS simulator
+    run-android [options]              builds your app and starts it on a connected Android emulator or device
+    new-library [options]              generates a native library bridge
+    bundle [options]                   builds the javascript bundle for offline use
+    unbundle [options]                 builds javascript as "unbundle" for offline use
+    eject [options]                    Re-create the iOS and Android folders and native code
+    link [options] [packageName]       links all native dependencies (updates native build files)
+    unlink [options] <packageName>     unlink native dependency
+    install [options] <packageName>    install and link native dependencies
+    uninstall [options] <packageName>  uninstall and unlink native dependencies
+    upgrade [options]                  upgrade your app's template files to the latest version; run this after updating the react-native version in your package.json and running npm install
+    log-android [options]              starts adb logcat
+    log-ios [options]                  starts iOS device syslog tail
+    dependencies [options]             lists dependencies
+    info [options]                     Get relevant version info about OS, toolchain and libraries

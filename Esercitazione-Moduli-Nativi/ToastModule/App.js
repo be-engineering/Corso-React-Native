@@ -7,12 +7,19 @@
  */
 
 import React, {Component} from 'react';
-import { Platform, NativeModules, StyleSheet, Button, Text, View, Alert } from 'react-native';
+import {
+    Platform,
+    StyleSheet,
+    Button,
+    Text,
+    View,
+    NativeModules,
+    Alert,
+    ScrollView
+} from 'react-native';
 
-const SuperToast = NativeModules.SuperToast;
-const Device = NativeModules.Device;
-
-
+const ToastModule = NativeModules.ToastModule;
+const DeviceModule = NativeModules.DeviceModule;
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -23,16 +30,50 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+
+
+  getDeviceModel = () => {
+    DeviceModule.getDeviceModel((err, model) => {
+      Alert.alert('Il tuo Telefono è: -> ' + model)
+    });
+  };
+
+  getDeviceManufactured = () => {
+    DeviceModule.getDeviceManufactured((err, model) => {
+      Alert.alert('Il produttore del tuo telefono è: -> ' + model)
+    });
+  };
+
+  getDeviceId = () => {
+    DeviceModule.getDeviceId((err, id) => {
+      Alert.alert('L id del tuo telefono è: -> ' + id)
+    });
+  };
+
+  getDeviceSerial = () => {
+    DeviceModule.getDeviceSerial((err, serial) => {
+    Alert.alert('Il tuo Telefono è: -> ' + serial)
+    Alert.alert(err)
+  });
+};
+
+
   render() {
     return (
       <View style={styles.container}>
+      <ScrollView>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Button title="show native toast" onPress={() => SuperToast.show('Awesome', SuperToast.LONG)} />
-        <Button title="show device" onPress={() => Device.getDeviceName((err, name) => {
-         Alert.alert(name)
-        })} />
+        <Button style={styles.margin} title="show toast short" onPress={() => ToastModule.show('Hello From Native code', ToastModule.SHORT)}/>
+        <Button style={styles.margin} title="show toast long" onPress={() => ToastModule.show('Hello From Native code', ToastModule.LONG)}/>
+        <Button style={styles.margin} title="show toast long" onPress={() => ToastModule.showWithGravity('Hello From Native code with Gravity', ToastModule.LONG)}/>
+
+        <Button style={styles.margin} title="Device model" onPress={() => this.getDeviceModel()}/>
+        <Button style={styles.margin} title="Device Manufactured" onPress={() => this.getDeviceManufactured()}/>
+        <Button style={styles.margin} title="Device id" onPress={() => this.getDeviceId()}/>
+        <Button style={styles.margin} title="Device serial" onPress={() =>this.getDeviceSerial()}/>
+      </ScrollView>
       </View>
     );
   }
@@ -55,4 +96,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  margin: {
+    marginTop: 16
+  }
 });

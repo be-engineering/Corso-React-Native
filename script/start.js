@@ -13,7 +13,6 @@ const cmd = require('./shared');
 const runReactNativeMetroBundler = ()=> {
   cmd.execSync(`watchman watch-del-all || true`);
   cmd.execSync(`adb reverse tcp:8081 tcp:8081 || true`);
-  if()
   cmd.execSync(`node ./node_modules/react-native/local-cli/cli.js start -- --reset-cache --root ./`);
 }
 
