@@ -2,13 +2,15 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native';
 import { SearchBar, ListItem } from 'react-native-elements';
-import LottieWrapper from '../core/LottieWrapper';
+import LottieWrapper from '../../core/LottieWrapper';
 
 import anim from '../assets/anim.json';
 
-const API_URL = `https://randomuser.me/api/?seed=${seed}&page=${page}&results=5`;
+class UserListScreen extends Component {
 
-class PostListDemo extends Component {
+    static navigationOptions = {
+        title: 'User App'
+    };
 
     constructor(props) {
         super(props);
@@ -101,7 +103,7 @@ class PostListDemo extends Component {
 
     render() {
         const { data } = this.state;
-        return (data.length > 0) ? (
+        return (
             <FlatList
                 data={data}
                 renderItem={({ item }) => (
@@ -122,7 +124,7 @@ class PostListDemo extends Component {
                 onEndReached={this.handleOnNeedMoreData}
                 onEndReachedThreshold={50}
             />
-        ) : <LottieWrapper {anim} />;
+        );
     }
 }
 
@@ -135,4 +137,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default PostListDemo;
+export default UserListScreen;

@@ -1,0 +1,29 @@
+{
+  "name": "reactnavigationsample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "link": "react-native link",
+    "eject": "react-native eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-native": "^0.59.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-navigation": "^3.3.2",
+    "react-navigation-slide-from-right-transition": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.5.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "^24.5.0",
+    "react-test-renderer": "^16.8.4"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
