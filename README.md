@@ -31,15 +31,20 @@
 ### [Esercitazione 4](https://github.com/be-engineering/Corso-React-Native/tree/master/Esercitazione-4) ###
 * todo
 
+### [Esercitazione Redux](https://github.com/be-engineering/Corso-React-Native/tree/master/Esercitazione-4) ###
+* todo
+
+### [Esercitazione Module Nativi](https://github.com/be-engineering/Corso-React-Native/tree/master/Esercitazione-4) ###
+* Implemenetazione di moduli nativi attraverso il bridge di React -native. La lezione verte sulla creazione di due mudili scritti in java, e la scrittura di una semplice App che li utilizza. E' una delle parti più complicate, ma allo stesso tempo interessante, rispetto ad i classici argomenti trattati nei corsi precedenti. E' necessario avere dei rudimenti di sviluppo Android.
 
 ### Librerie Link
 * [Redux](https://redux.js.org/introduction/examples)
 
-### Esempio di utilizzo degli script 
-* "android": "react-native run-android",
-* "ios": "react-native run-ios",
-* "xcode": "open ios/CleanOutDoor.xcworkspace/",
-* "run:ios": ". ./script/ios/build.sh",
-* "rename": "node ./script/rename.js",
-* "start": "node ./script/start.js",
-* "clean": "node ./script/clean.js",
+### Esempio di utilizzo degli [script](https://github.com/be-engineering/Corso-React-Native/tree/master/script)
+> * "android": "react-native run-android"
+> * "ios": "react-native run-ios"
+> * "xcode": "open ios/CleanOutDoor.xcworkspace/"
+> * "run:ios": ". ./script/ios/build.sh"
+> * "rename": "node ./script/rename.js"
+> * "start": "node ./script/start.js"
+> * "clean": "node ./script/clean.js"
