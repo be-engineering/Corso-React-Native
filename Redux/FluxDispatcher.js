@@ -1,4 +1,6 @@
 // Questo è un Dispatcher modificato da me ma di poco, a partire da quello utilizzato da Facebook in Flux //
+// deve servire solo come esempio al fine di capire l architettura Redux, che migliora quella Flux, ma sempre molto simili //
+// la differenza sta negli store dove in Redux è uno solo //
 // Flux Dispatcher Originale: https://github.com/facebook/flux/blob/master/src/Dispatcher.js
 /* eslint-disable no-continue */
 
