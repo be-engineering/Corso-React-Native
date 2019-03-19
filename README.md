@@ -51,3 +51,10 @@
 
 ### [Procedura di Release](https://github.com/be-engineering/Corso-React-Native/blob/master/docs/Release.md)
 
+#### Link Utili per il processo di Relase (Android)
+
+* [Generate an upload key and keystore](https://developer.android.com/studio/publish/app-signing);
+* [Sign your app with your key](https://developer.android.com/studio/publish/app-signing#sign_release);
+* [Upload to Google Play Console](https://developer.android.com/studio/publish/upload-bundle);
+
+
