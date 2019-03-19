@@ -1,5 +1,5 @@
 # Android APK
-* sudo keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+* keytool -genkeypair -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 * Place the my-release-key.keystore file under the android/app directory in your project folder.
 * Create offline js bundle;
 * Create folder assets: android/app/src/main/assets;
