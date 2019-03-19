@@ -29,6 +29,11 @@
 * cd android && ./gradlew assembleRelease
 * react-native run-android --variant=release
 
+Con Android studio
+[header](header.png)
+[header](header.png)
+[header](header.png)
+
 # iOS
 
 * Run:<br/>react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
