@@ -8,10 +8,10 @@
  * data: 13-03-2019
 */
 
-const cp = require('child_process');
+const { execSync } = require('child_process');
 
 const execSync = (cmd) => {
-    cp.execSync(cmd, { stdio: ['inherit', 'inherit', 'inherit'] });
+    execSync(cmd, { stdio: ['inherit', 'inherit', 'inherit'] });
 };
 const execSyncSilently = (cmd) => {
     execSync(cmd, { stdio: ['ignore', 'ignore', 'ignore'] });
@@ -23,7 +23,6 @@ const kill = (process) => { // eslint-disable-line no-unused-vars
 
 /* export shared command to use in other file in node env */
 module.exports = {
-    execSync,
     execSyncSilently,
     kill
 };

@@ -6,6 +6,7 @@
 */
 
 const cp = require('child_process');
+const { execSync } = require('child_process');
 
 const execSync = (cmd) => {
   cp.execSync(cmd, { stdio: ['inherit', 'inherit', 'inherit'] });
