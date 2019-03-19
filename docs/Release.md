@@ -30,10 +30,11 @@
 * react-native run-android --variant=release
 
 # Con Android studio
-[Selezionare il menu](screeshot/1.png)
-[Inserire le info](screeshot/2.png)
-[Altre info](screeshot/3.png)
-[Selezionare tipologia](screeshot/4.png)
+* Sequena Immagini: <br />
+![](screeshot/1.png)
+![](screeshot/2.png)
+![](screeshot/3.png)
+![](screeshot/4.png)
 
 # iOS
 
