@@ -28,7 +28,7 @@
     * Material BottomTab Navigation ([doc](https://reactnavigation.org/docs/en/material-bottom-tab-navigator.html))
     * Material Top Tab Navigation ([doc](https://reactnavigation.org/docs/en/material-top-tab-navigator.html))
 
-### [Esercitazione Module Nativi](https://github.com/be-engineering/Corso-React-Native/tree/master/Esercitazione-4) ###
+### [Esercitazione Module Nativi](https://github.com/be-engine4ering/Corso-React-Native/tree/master/Esercitazione-4) ###
 * Implemenetazione di moduli nativi attraverso il bridge di React -native. La lezione verte sulla creazione di due mudili scritti in java, e la scrittura di una semplice App che li utilizza. E' una delle parti più complicate, ma allo stesso tempo interessante, rispetto ad i classici argomenti trattati nei corsi precedenti. E' necessario avere dei rudimenti di sviluppo Android.
 
 ### Link Uili
@@ -48,3 +48,13 @@
 * "build:ios": ". ./script/ios/build.sh"  -> da terminale ```yarn build:android oppure npm run build:android```
 * "build:android": ". ./script/ios/build.sh"  -> da terminale ```yarn build:ios oppure npm run build:ios```
 * "clean": "node ./script/clean.js"  -> da terminale ```yarn clean oppure npm run clean```
+
+### [Procedura di Release](https://github.com/be-engineering/Corso-React-Native/blob/master/docs/Release.md)
+
+#### Link Utili per il processo di Relase (Android)
+
+* [Generate an upload key and keystore](https://developer.android.com/studio/publish/app-signing);
+* [Sign your app with your key](https://developer.android.com/studio/publish/app-signing#sign_release);
+* [Upload to Google Play Console](https://developer.android.com/studio/publish/upload-bundle);
+
+
