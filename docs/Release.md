@@ -6,6 +6,12 @@
 * Run:<br/>
 ```react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/```
 
+> Aggiungere al gradle.properties le informazioni che abbiamo aggiunto in fase di comando:
+* MYAPP_RELEASE_STORE_FILE=my-release-key.keystore
+* MYAPP_RELEASE_KEY_ALIAS=my-key-alias
+* MYAPP_RELEASE_STORE_PASSWORD=[pw]
+* MYAPP_RELEASE_KEY_PASSWORD=[pw]
+
 > Modificare il build.gradle all interno della cartella app di android:
 ```
     signingConfigs {
