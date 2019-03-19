@@ -29,10 +29,11 @@
 * cd android && ./gradlew assembleRelease
 * react-native run-android --variant=release
 
-Con Android studio
-[header](header.png)
-[header](header.png)
-[header](header.png)
+# Con Android studio
+[Selezionare il menu](screeshot/1.png)
+[Inserire le info](screeshot/2.png)
+[Altre info](screeshot/3.png)
+[Selezionare tipologia](screeshot/4.png)
 
 # iOS
 
