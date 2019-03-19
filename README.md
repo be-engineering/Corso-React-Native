@@ -48,3 +48,6 @@
 * "build:ios": ". ./script/ios/build.sh"  -> da terminale ```yarn build:android oppure npm run build:android```
 * "build:android": ". ./script/ios/build.sh"  -> da terminale ```yarn build:ios oppure npm run build:ios```
 * "clean": "node ./script/clean.js"  -> da terminale ```yarn clean oppure npm run clean```
+
+### [Procedura di Release] (https://github.com/be-engineering/Corso-React-Native/tree/master/Esercitazione-4)
+
